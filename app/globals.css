@@ -2,10 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+/* // https://fonts.google.com/specimen/Maven+Pro  */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+/* // https://fonts.google.com/specimen/Josefin+Sans */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&family=Maven+Pro&family=Thasadith&display=swap');
+
+@font-face {
+    font-family: 'Ampersand-bold';
+    src: url('https://uploads-ssl.webflow.com/5e1e29388e0a4f467dbe0cf1/60048bb298c87b21b884d03f_Ampersand-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Ampersand-light';
+    src: url('https://uploads-ssl.webflow.com/5e1e29388e0a4f467dbe0cf1/60048bb2da7fb7f568f40b38_Ampersand-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Maven pro";
+    src: url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+::selection {
+    color: #800080;
+    background-color: #1a1a1aab;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,8 +51,13 @@
   }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
+    font-family: 'Ampersand-light' !important;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -26,8 +66,13 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
+
+layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+footer {
+    font-family: 'Maven pro';
 }
