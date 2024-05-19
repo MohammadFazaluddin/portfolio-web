@@ -8,7 +8,7 @@ export default function ContactMe() {
             </div>
             <div className="flex">
                 <Link className="border-b-2 border-gray-800 hover:border-white hover:ease-in ease-out duration-150" href="mailto:mohammadfazal.tech@gmail.com">
-                    LET'S TALK
+                    LET&apos;S TALK
                 </Link> 
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
                     className="-rotate-45 top-10 relative" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
